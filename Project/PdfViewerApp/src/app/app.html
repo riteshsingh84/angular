@@ -1,0 +1,173 @@
+<div class="main-layout" [class.light-theme]="theme === 'light'">
+  <div class="pdf-header">
+    <h1>PDF Viewer Pro</h1>
+  </div>
+
+  <div class="content-area">
+    <!-- Left Panel: Controls -->
+    <div class="controls-panel">
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Theme</span>
+          <span class="control-desc">Switch between Light and Dark mode</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [checked]="theme === 'dark'" (change)="toggleTheme()">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Sidebar</span>
+          <span class="control-desc">Toggle the sidebar visibility</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showSidebarButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Find</span>
+          <span class="control-desc">Enable text search functionality</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showFindButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Paging</span>
+          <span class="control-desc">Show page navigation controls</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showPagingButtons">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Zoom</span>
+          <span class="control-desc">Enable zoom in/out controls</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showZoomButtons">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Presentation Mode</span>
+          <span class="control-desc">Allow full-screen presentation</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showPresentationModeButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Open File</span>
+          <span class="control-desc">Allow opening local PDF files</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showOpenFileButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Print</span>
+          <span class="control-desc">Enable printing functionality</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showPrintButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Download</span>
+          <span class="control-desc">Allow downloading the PDF</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showDownloadButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Secondary Toolbar</span>
+          <span class="control-desc">Show the overflow menu</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showSecondaryToolbarButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Toolbar Rotate Button</span>
+          <span class="control-desc">Show/Hide Rotate Button</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showRotateButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Hand Tool Button</span>
+          <span class="control-desc">Show/Hide Hand Tool Button</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showHandToolButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="control-item">
+        <div class="control-label">
+          <span class="control-name">Text Selection Button</span>
+          <span class="control-desc">Show/Hide Text Selection Button</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="showTextSelectionButton">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- Right Panel: PDF Viewer -->
+    <div class="pdf-panel">
+      <ngx-extended-pdf-viewer [src]="pdfSrc" [height]="'100%'" [theme]="theme"
+        [backgroundColor]="theme === 'dark' ? '#1a1a1a' : '#f5f5f5'" [(handTool)]="showHandToolButton" [(zoom)]="zoom"
+        [(rotation)]="rotation" [showSidebarButton]="showSidebarButton" [showFindButton]="showFindButton"
+        [showPagingButtons]="showPagingButtons" [showZoomButtons]="showZoomButtons"
+        [showPresentationModeButton]="showPresentationModeButton" [showOpenFileButton]="showOpenFileButton"
+        [showPrintButton]="showPrintButton" [showDownloadButton]="showDownloadButton"
+        [showSecondaryToolbarButton]="showSecondaryToolbarButton" [showRotateButton]="showRotateButton"
+        [showRotateCwButton]="showRotateButton" [showRotateCcwButton]="showRotateButton"
+        [showHandToolButton]="showTextSelectionButton">
+      </ngx-extended-pdf-viewer>
+    </div>
+  </div>
+
+  <div class="pdf-footer">
+    <h1>© 2025 PDF Viewer App - All Rights Reserved</h1>
+  </div>
+</div>
