@@ -27,7 +27,7 @@ This repository aggregates Angular projects and reusable components that demonst
 - Includes examples for routing, services, and state management
 - Useful projects
 
-## 📂 Projects (Auto-Generated)
+## 📂 Projects
 
 <!-- PROJECTS_START -->
 ### [PdfViewerApp](./Project/PdfViewerApp)
