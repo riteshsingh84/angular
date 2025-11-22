@@ -60,6 +60,8 @@ npm install
 Run the application in development mode:
 
 ```bash
+npm start
+or
 ng serve
 ```
 
