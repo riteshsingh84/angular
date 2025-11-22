@@ -82,3 +82,6 @@ To execute unit tests via [Karma](https://karma-runner.github.io):
 ```bash
 ng test
 ```
+## Project UI/UX
+<img width="1907" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f6b547-5b70-4c6c-85d0-0d26c459b1ca" />
+
