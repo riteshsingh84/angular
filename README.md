@@ -1,12 +1,80 @@
-# Angular Projects Showcase
+# Angular Utilities Repository
 
-This repository serves as a collection of useful Angular projects and components. It is intended as a showcase for a resource for developers, who are welcome to use this code for reference or integration into their own projects under the MIT License.
+![GitHub repo size](https://img.shields.io/github/repo-size/riteshsingh84/angular)
+![GitHub stars](https://img.shields.io/github/stars/riteshsingh84/angular?style=social)
+![License](https://img.shields.io/github/license/riteshsingh84/angular)
+![Angular Version](https://img.shields.io/badge/Angular-15%2B-red)
 
-## Projects
+A collection of Angular projects, components, and utilities for building modern web applications. Designed to be modular, beginner-friendly, and easy to extend.
 
+## 📑 Table of Contents
+- [Overview](#-overview)
+- [Features](#-features)
+- [Projects](#-projects)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+
+## 🔍 Overview
+This repository aggregates Angular projects and reusable components that demonstrate best practices for building scalable and maintainable web applications.
+
+## ✨ Features
+- Modular and reusable Angular components
+- Follows Angular CLI standards
+- Ready for responsive and dynamic UI development
+- Includes examples for routing, services, and state management
+- Useful projects
+
+## 📂 Projects (Auto-Generated)
+
+<!-- PROJECTS_START -->
 ### [PdfViewerApp](./Project/PdfViewerApp)
 A powerful and customizable PDF viewer application built with Angular. It features a split-screen layout, theme support (Light/Dark), and a comprehensive set of toggleable toolbar controls.
 <img width="1907" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f6b547-5b70-4c6c-85d0-0d26c459b1ca" />
-## License
+<!-- PROJECTS_END -->
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ⚙️ Installation
+Clone the repository:
+```bash
+git clone https://github.com/riteshsingh84/angular.git
+cd angular
+```
+
+Install dependencies:
+```bash
+npm install
+```
+
+Ensure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://angular.io/cli) installed.
+
+
+## ▶️ Usage
+Serve the application:
+```bash
+ng serve
+```
+
+Build the application:
+```bash
+ng build
+```
+
+Run tests:
+```bash
+ng test
+```
+
+## 🤝 Contributing
+Contributions are welcome!
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+Please follow Angular best practices and include documentation.
+
+## 📜 License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
