@@ -2,6 +2,7 @@
 
 A powerful and customizable PDF viewer application built with Angular. This application provides a rich user interface for viewing PDF documents with advanced features like theme switching, rotation, zooming, and a fully toggleable toolbar system.
 
+### [DEMO](https://riteshsingh84.github.io/angular/Project/PdfViewerApp/dist/pdf-viewer-app/browser/)
 ## Features
 
 - **Split-Screen Layout**: A modern interface with a dedicated controls panel on the left and the PDF viewer on the right.
