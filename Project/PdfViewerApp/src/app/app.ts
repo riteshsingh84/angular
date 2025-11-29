@@ -27,7 +27,7 @@ export class App {
   showTextSelectionButton = true;
 
   // Viewer State
-  theme = 'light';
+  theme = 'dark';
   zoom = 'auto';
   rotation: 0 | 90 | 180 | 270 = 0;
 
