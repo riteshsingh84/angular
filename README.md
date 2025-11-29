@@ -32,6 +32,8 @@ This repository aggregates Angular projects and reusable components that demonst
 <!-- PROJECTS_START -->
 ### [PdfViewerApp](./Project/PdfViewerApp)
 A powerful and customizable PDF viewer application built with Angular. It features a split-screen layout, theme support (Light/Dark), and a comprehensive set of toggleable toolbar controls.
+
+### [DEMO](https://riteshsingh84.github.io/angular/Project/PdfViewerApp/dist/pdf-viewer-app/browser/)
 <img width="1907" height="1041" alt="image" src="https://github.com/user-attachments/assets/25f6b547-5b70-4c6c-85d0-0d26c459b1ca" />
 <!-- PROJECTS_END -->
 
