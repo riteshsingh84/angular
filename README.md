@@ -32,7 +32,7 @@ This repository aggregates Angular projects and reusable components that demonst
 <!-- PROJECTS_START -->
 
 <!-- PdfViewerApp -->
-### [PdfViewerApp](./Project/PdfViewerApp)
+### 1. [PdfViewerApp](./Project/PdfViewerApp)
 A powerful and customizable PDF viewer application built with Angular. It features a split-screen layout, theme support (Light/Dark), and a comprehensive set of toggleable toolbar controls.
 
 ### [DEMO](https://riteshsingh84.github.io/angular/Project/PdfViewerApp/dist/pdf-viewer-app/browser/)
@@ -40,11 +40,11 @@ A powerful and customizable PDF viewer application built with Angular. It featur
 <!-- PdfViewerApp End -->
 
 <!-- Time Picker POC -->
-### [TimePickerPoc](./Project/TimePickerPoc)
+### 2. [TimePickerPoc](./Project/TimePickerPoc)
 A powerful and customizable Time Picker POC application built with Angular. Zoneless Angular 20 POC demonstrating a Material-styled time picker using ngx-mat-timepicker, with toggles for 12h/24h format and manual input.
 
 ### [DEMO](https://riteshsingh84.github.io/angular/Project/TimePickerPoc/dist/timepicker-poc/browser/)
-<img width="1907" height="1041" alt="image" src=./public/TimePickerpoc.png" />
+<img height="100%" alt="image" src="https://github.com/user-attachments/assets/b982607d-bcb8-4fa1-b4e4-a41b4efddbc3" />
 <!-- TimePickerPoc End -->
 
 <!-- PROJECTS_END -->
