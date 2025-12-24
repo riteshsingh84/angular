@@ -1,0 +1,57 @@
+
+<main class="container">
+  <mat-card class="panel">
+    <h1 class="title">Time Picker</h1>
+
+    <section class="controls">
+      <div class="row row-1">
+        <mat-button-toggle-group [value]="format12h ? '12' : '24'" (change)="onFormatChange($event.value)" name="fmt" aria-label="Time format">
+          <mat-button-toggle value="12">12 h</mat-button-toggle>
+          <mat-button-toggle value="24">24 h</mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <mat-slide-toggle [(ngModel)]="allowManualInput" (ngModelChange)="onManualInputChange($event)">Manual Input</mat-slide-toggle>
+
+        <mat-slide-toggle [(ngModel)]="openOnInputClick" (ngModelChange)="onOpenOnInputClickChange($event)">Open on input click</mat-slide-toggle>
+      </div>
+
+      <div class="row row-2">
+        <mat-button-toggle-group [value]="themeMode" (change)="onThemeModeChange($event.value)" name="theme" aria-label="Theme mode">
+          <mat-button-toggle value="light">Light</mat-button-toggle>
+          <mat-button-toggle value="dark">Dark</mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <mat-button-toggle-group [value]="themeColor" (change)="onThemeColorChange($event.value)" name="palette" aria-label="Theme palette">
+          <mat-button-toggle value="primary">Primary</mat-button-toggle>
+          <mat-button-toggle value="accent">Accent</mat-button-toggle>
+          <mat-button-toggle value="warn">Warn</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+
+      <div class="row row-3">
+        <mat-form-field appearance="outline">
+          <mat-label>Min time</mat-label>
+          <input matInput [(ngModel)]="minTime" (ngModelChange)="onMinChange($event)" [placeholder]="format12h ? 'hh:mm AM' : 'HH:mm'" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Max time</mat-label>
+          <input matInput [(ngModel)]="maxTime" (ngModelChange)="onMaxChange($event)" [placeholder]="format12h ? 'hh:mm AM' : 'HH:mm'" />
+        </mat-form-field>
+      </div>
+    </section>
+
+    <section class="picker">
+      <app-time-picker
+        [format12h]="format12h"
+        [allowManualInput]="allowManualInput"
+        [min]="minTime"
+        [max]="maxTime"
+        [disableClick]="!openOnInputClick"
+        [color]="themeColor"
+        (timeChange)="onTimeChange($event)"
+      />
+    </section>
+
+
+
